@@ -1,9 +1,12 @@
 {
-  "name": "chatgpt",
-  "version": "1.4.0",
+  "name": "@actuallydan/chatgpt",
+  "version": "1.4.2",
   "description": "Node.js client for the unofficial ChatGPT API.",
   "author": "Travis Fischer <travis@transitivebullsh.it>",
-  "repository": "transitive-bullshit/chatgpt-api",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/transitive-bullshit/chatgpt-api.git"
+  },
   "license": "MIT",
   "type": "module",
   "source": "./src/index.ts",
@@ -25,7 +28,6 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "clean": "del build",
-    "prebuild": "run-s clean",
     "predev": "run-s clean",
     "pretest": "run-s build",
     "docs": "typedoc",
@@ -89,5 +91,13 @@
     "ai",
     "ml",
     "bot"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/transitive-bullshit/chatgpt-api/issues"
+  },
+  "homepage": "https://github.com/transitive-bullshit/chatgpt-api#readme",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  }
 }
